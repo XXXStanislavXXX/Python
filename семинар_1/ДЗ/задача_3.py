@@ -19,4 +19,4 @@ while True:
             print(f" {number} -> no")
         break
     else:
-        print("Введите 6ти значный номер. ")
+        input('Введите шестизначный номер Вашего билета: ')
