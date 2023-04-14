@@ -7,3 +7,16 @@
 Ввод: 3
 -> 2
 """
+
+number = abs(int(input("Введите количество элементов списка: ")))
+entered = input("Введите через пробел элементы списка: ").split()
+list_1 = list(map(int, entered))
+if len(list_1) != number:
+    print("Введенное количество элементов не соответстует определению длинны списка")
+else:
+    X = int(input("Введите число X, которое необходимо найти в списке: "))
+    count = 0
+    for i in range(number):
+        if list_1[i] == X:
+            count += 1
+    print(f"Число {X} встречается {count} раз")
