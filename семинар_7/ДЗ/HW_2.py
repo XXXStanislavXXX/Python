@@ -11,7 +11,6 @@
 **Ввод:** `print_operation_table(lambda x, y: x * y) `
 **Вывод:**
 1 2 3 4 5 6
-
 2 4 6 8 10 12
 3 6 9 12 15 18
 4 8 12 16 20 24
@@ -19,6 +18,7 @@
 6 12 18 24 30 36
 
 """
+
 
 def print_operation_table(operation, num_raws=int(input("enter raws ")), num_columns=int(input("enter columns "))):
     a = [[operation(i, j) for j in range(1, num_columns + 1)] for i in range(1, num_raws + 1)]
