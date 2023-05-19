@@ -20,8 +20,8 @@
 
 """
 
-def print_operation_table(operation, num_rows=int(input("enter raws ")), num_columns=int(input("enter columns "))):
-    a = [[operation(i, j) for j in range(1, num_columns + 1)] for i in range(1, num_rows + 1)]
+def print_operation_table(operation, num_raws=int(input("enter raws ")), num_columns=int(input("enter columns "))):
+    a = [[operation(i, j) for j in range(1, num_columns + 1)] for i in range(1, num_raws + 1)]
     for i in a:
         print(*[f"{x:>3}" for x in i])
 
